@@ -13,5 +13,15 @@ services:
     networks:
       - blog-net
 
+  php-fpm:
+    build: ./php-fpm
+    volumes:
+      - ./blog:/var/www/html
+      - ./php-fpm/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - mydb
+    networks:
+      - blog-net
+
 networks:
   blog-net:
