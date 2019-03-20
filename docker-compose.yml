@@ -1,4 +1,17 @@
 version: '3.7'
 
+services:
+
+  mydb:
+    image: mysql:5.7.25
+    restart: on-failure
+    volumes:
+      - ./mysql/conf/my.cnf:/etc/mysql/conf.d/mysql.cnf:ro
+      - ./mysql/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=blog123.
+    networks:
+      - blog-net
+
 networks:
-  vkarz:
+  blog-net:
