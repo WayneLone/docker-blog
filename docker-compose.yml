@@ -34,6 +34,7 @@ services:
       - ./nginx/conf/vhost:/etc/nginx/conf.d:ro
       - ./nginx/log:/var/log/nginx
       - ./website:/usr/share/nginx/html
+      - /usr/local/nginx/conf/ssl:/etc/ssl/certs
     environment:
       - "TZ=Asia/Shanghai"
     depends_on:
