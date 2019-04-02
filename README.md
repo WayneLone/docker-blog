@@ -11,6 +11,14 @@
 * [typecho][typecho] v1.1(17.10.30) - 基于php的博客系统，比较轻量级
 * [acme.sh][acme.sh] - 用来生成 [Let's Encrypt][letsencrypt] 证书
 
+详细配置信息请参考：
+
+基于docker使用nginx+phpfpm+typecho搭建一个自己博客
+
+* 上：[基础工作和创建mysql容器](https://www.vkarz.com/index.php/archives/46/)
+* 中：[创建配置php-fpm和nginx容器](https://www.vkarz.com/index.php/archives/47/)
+* 下：[安装typecho及Lets Encrypt证书](https://www.vkarz.com/index.php/archives/48/)
+
 [centos]: https://www.centos.org/
 [docker]: https://www.docker.com/
 [docker-compose]: https://docs.docker.com/compose/overview/
